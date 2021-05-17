@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 
 export const MatchPage = () => {
 
-    const [matches, setMatches] = useState({});
+    const [matches, setMatches] = useState([]);
     const { teamName, year } = useParams();
 
     useEffect (
