@@ -10,7 +10,7 @@ export const HomePage = () => {
     useEffect (
         () => {
             const fetchAllTeams = async () => {
-                const response = await fetch(`${process.env.REACT_APP_API_ROOT_URL}/team/`);
+                const response = await fetch(`${process.env.REACT_APP_API_ROOT_URL}/team`);
                 const data = await response.json();
                 setTeam(data);
             }
@@ -22,7 +22,12 @@ export const HomePage = () => {
   return (
     <div className="HomePage">
         <div className="header-section">
-            <h1 className="app-name">IPL Dashboard</h1>
+            <div className="ipl-logo">
+                <img src={`../images/IPL-logo.svg`} alt="Logo" width="200" height="130"/>
+            </div>
+            <div>
+                <h1 className="app-name">IPL Dashboard</h1>
+            </div>
         </div>
         <div className="team-grid">
             {teams.map(team => <TeamTile key={team.id} teamName={team.teamName}/>)}

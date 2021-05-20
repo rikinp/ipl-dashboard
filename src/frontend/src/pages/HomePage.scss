@@ -1,8 +1,17 @@
 .HomePage {
+    .header-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 30px;
+    }
+    .ipl-logo{
+        justify-self: center;
+        margin-left: 250px;
+    }
     .app-name {
-        font-size: 3rem;
-        margin: 30px auto;
-        text-align: center;
+        font-size: 2.5rem;
+        margin-top: 10px;
+        margin-right: 250px;
     }
     .team-grid {
         display: grid;

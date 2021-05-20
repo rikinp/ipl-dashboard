@@ -10,6 +10,7 @@ export const TeamPage = () => {
 
     const [team, setTeam] = useState({matches : []});
     const { teamName } = useParams();
+    const someVariable = teamName;
 
     useEffect (
         () => {
@@ -30,6 +31,9 @@ export const TeamPage = () => {
 
   return (
     <div className="TeamPage">
+        <div className="team-logo">
+            <img src={`../images/${someVariable}.svg`} alt="Logo" width="295" height="200"/>
+        </div>
         <div className="team-name-section">
             <h1 className="team-name">{team.teamName}</h1>
         </div>

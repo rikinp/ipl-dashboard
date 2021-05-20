@@ -6,8 +6,12 @@
     grid-row-gap: 10px;
 
 
+    .team-logo{
+        margin-top: 100px;
+    }
+    
     .team-name-section {
-        grid-column: span 3;
+        grid-column: span 2;
         justify-self: start;
         align-self: end;
     }
@@ -18,9 +22,11 @@
     }
 
     .win-loss-section {
+        margin-top: 50px;
         justify-self: center;
         padding: 40px;
         text-align: center;
+        size: 3rem;
     }
 
     .match-detail-section {
